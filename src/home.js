@@ -33,12 +33,12 @@ boothImage.src = Booth;
 bottomImage.appendChild(boothImage);
 
 // Function to display the home page in the given div
-const displayHome = function (parentDiv) {
-  parentDiv.appendChild(titleDiv);
-  parentDiv.appendChild(introP);
-  parentDiv.appendChild(quote);
-  parentDiv.appendChild(hours);
-  parentDiv.appendChild(bottomImage);
+const displayHome = function (parent) {
+  parent.appendChild(titleDiv);
+  parent.appendChild(introP);
+  parent.appendChild(quote);
+  parent.appendChild(hours);
+  parent.appendChild(bottomImage);
 };
 
 export default displayHome;

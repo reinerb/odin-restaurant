@@ -1,5 +1,6 @@
 import "./style.css";
 import displayHome from "./home.js";
+import displayMenu from "./menu.js";
 
 const homeTab = document.querySelector("#home");
 const menuTab = document.querySelector("#menu");
@@ -11,7 +12,7 @@ const tabs = [homeTab, menuTab, contactTab];
 // Clears all children of the given div
 const clear = function (parent) {
   while (parent.firstChild) {
-    parent.removeElement(parent.firstChild);
+    parent.removeChild(parent.firstChild);
   }
 };
 
@@ -25,16 +26,15 @@ const changeTab = function (index) {
     }
   }
 
-  // if (index == 0) {
-  //   clear(contentDiv);
-  //   displayHome(contentDiv);
-  // } else if (index == 1) {
-  //   clear(contentDiv);
-  //   displayMenu(contentDiv);
-  // } else if (index == 2) {
-  //   clear(contentDiv);
-  //   displayContact(contentDiv);
-  // }
+  if (index == 0) {
+    clear(contentDiv);
+    displayHome(contentDiv);
+  } else if (index == 1) {
+    clear(contentDiv);
+    displayMenu(contentDiv);
+  } else if (index == 2) {
+    return;
+  }
 };
 
 for (let i = 0; i < tabs.length; i++) {
