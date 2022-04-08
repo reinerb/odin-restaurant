@@ -198,7 +198,7 @@ blockquote + figcaption::before {
   content: "\2014 \00a0";
 }
 
-.menu-grid {
+.content-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.5rem;

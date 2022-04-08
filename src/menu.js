@@ -35,7 +35,7 @@ dessertTitle.innerHTML = "<h2>Dessert</h2>";
 
 // Beverage cards
 const beverageGrid = document.createElement("div");
-beverageGrid.classList.add("menu-grid");
+beverageGrid.classList.add("content-grid");
 
 const coffeeCard = document.createElement("div");
 coffeeCard.classList.add("menu-card");
@@ -67,7 +67,7 @@ beverageGrid.appendChild(gingerCard);
 
 // Breakfast cards
 const breakfastGrid = document.createElement("div");
-breakfastGrid.classList.add("menu-grid");
+breakfastGrid.classList.add("content-grid");
 
 const pancakeCard = document.createElement("div");
 pancakeCard.classList.add("menu-card");
@@ -99,7 +99,7 @@ breakfastGrid.appendChild(bagelCard);
 
 // Lunch cards
 const lunchGrid = document.createElement("div");
-lunchGrid.classList.add("menu-grid");
+lunchGrid.classList.add("content-grid");
 
 const burgerCard = document.createElement("div");
 burgerCard.classList.add("menu-card");
@@ -131,7 +131,7 @@ lunchGrid.appendChild(riceCard);
 
 // Dessert cards
 const dessertGrid = document.createElement("div");
-dessertGrid.classList.add("menu-grid");
+dessertGrid.classList.add("content-grid");
 
 const cookieCard = document.createElement("div");
 cookieCard.classList.add("menu-card");

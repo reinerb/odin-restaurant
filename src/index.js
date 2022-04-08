@@ -1,6 +1,7 @@
 import "./style.css";
 import displayHome from "./home.js";
 import displayMenu from "./menu.js";
+import displayContact from "./contact";
 
 const homeTab = document.querySelector("#home");
 const menuTab = document.querySelector("#menu");
@@ -33,7 +34,8 @@ const changeTab = function (index) {
     clear(contentDiv);
     displayMenu(contentDiv);
   } else if (index == 2) {
-    return;
+    clear(contentDiv);
+    displayContact(contentDiv);
   }
 };
 
